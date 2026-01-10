@@ -19,11 +19,11 @@ export const Sidebar: React.FC = () => {
       <div className="relative z-10 h-full flex flex-col justify-between p-8 lg:p-20 text-white">
         {/* Logo Section */}
         <div className="flex items-center gap-4" data-aos="fade-down">
-          <div className="w-12 h-12 lg:w-16 lg:h-16 bg-white flex items-center justify-center p-2 rounded shadow-2xl">
+          <div className="w-12 h-12 lg:w-16 lg:h-16 bg-white flex items-center justify-center rounded shadow-2xl">
             <img src={logo} alt="" className="w-full h-full object-contain"/>
           </div>
           <div>
-            <h2 className="text-xl lg:text-3xl font-black tracking-tighter leading-none mb-1">AL KHALAWI INTERNATIONAL STEEL PRODUCTS L.L.C</h2>
+            <h2 className="text-lg lg:text-3xl font-black tracking-tighter leading-none mb-1">AL KHALAWI INTERNATIONAL STEEL PRODUCTS L.L.C</h2>
             <p className="text-bronze-accent text-[10px] lg:text-xs font-bold tracking-[0.3em] uppercase opacity-90">& Oman Pipes International LLC
 </p>
           </div>

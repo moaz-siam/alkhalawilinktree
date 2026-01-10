@@ -9,11 +9,11 @@ interface ServiceLinkProps {
   delay?: number;
 }
 
-export const ServiceLink: React.FC<ServiceLinkProps> = ({ icon, title, description, suffix, delay = 0 , link }) => {
+export const ServiceLink: React.FC<ServiceLinkProps> = ({ icon, title, description, suffix, delay = 0 , link , target }) => {
   return (
     <a 
       href={link}
-      target="_blank"
+      target={target}
       rel="noopener noreferrer"
       className="group relative flex items-center gap-6 w-full bg-navy-base text-white p-6 transition-all duration-300 ease-out border-l-[6px] border-bronze-accent shadow-xl hover:-translate-y-1 hover:shadow-2xl active:translate-y-0 cursor-pointer"
       data-aos="fade-left"

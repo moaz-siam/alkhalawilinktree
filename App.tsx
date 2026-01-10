@@ -44,6 +44,7 @@ const App: React.FC = () => {
               suffix={<ChevronRight className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
               delay={100}
               link="https://alkhalawisteel.com/en/"
+              target="_blank"
             />
             <ServiceLink
               icon={<BookOpen className="w-8 h-8 text-bronze-accent" />}
@@ -52,6 +53,7 @@ const App: React.FC = () => {
               suffix={<Download className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
               delay={200}
               link="./components/catalog.pdf"
+              target=""
             />
             <ServiceLink
               icon={<Phone className="w-8 h-8 text-bronze-accent" />}
@@ -60,6 +62,7 @@ const App: React.FC = () => {
               suffix={<ArrowUpRight className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
               delay={300}
               link="tel:+96891111191"
+              target=""
             />
             <ServiceLink
               icon={<MapPin className="w-8 h-8 text-bronze-accent" />}
@@ -68,6 +71,7 @@ const App: React.FC = () => {
               suffix={<Map className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
               delay={500}
               link="https://maps.app.goo.gl/U8cnozEA8iDbnvVBA"
+              target="_blank"
             />
           </div>
 
