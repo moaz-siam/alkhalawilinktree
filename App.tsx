@@ -12,18 +12,23 @@ const App: React.FC = () => {
     AOS.init({
       duration: 1000,
       once: true,
-      easing: 'ease-out-cubic'
+      easing: 'ease-out-cubic',
     });
   }, []);
 
   return (
-    <div className="flex h-screen w-full flex-col lg:flex-row bg-white">
+    <div className="flex min-h-screen lg:h-screen w-full flex-col lg:flex-row bg-white">
+      <style>{`
+        html, body {
+          overflow-x: hidden;
+        }
+      `}</style>
       {/* Left Panel: Hero Image & Identity */}
       <Sidebar />
 
       {/* Right Panel: Content & Links */}
-      <main className="flex-1 h-full overflow-y-auto custom-scrollbar relative">
-        <div className="max-w-xl mx-auto px-6 lg:px-16 py-12 lg:py-24">
+      <main className="flex-1 lg:h-full lg:overflow-y-auto custom-scrollbar relative">
+        <div className="max-w-xl mx-auto px-5 md:px-8 lg:px-16 pt-10 pb-32 lg:py-24">
 
           {/* Header Section */}
           <header className="mb-12" data-aos="fade-up">
@@ -36,7 +41,7 @@ const App: React.FC = () => {
           </header>
 
           {/* Links Section */}
-          <div className="flex flex-col gap-6 mb-16">
+          <div className="flex flex-col gap-4 lg:gap-6 mb-16">
             <ServiceLink
               icon={<Globe className="w-8 h-8 text-bronze-accent" />}
               title="Main Website"
