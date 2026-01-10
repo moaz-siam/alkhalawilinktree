@@ -6,6 +6,8 @@ import { SocialLinks } from './components/SocialLinks';
 import { Globe, BookOpen, Phone, Mail, MapPin, ChevronRight, Download, ArrowUpRight, Send, Map } from 'lucide-react';
 // @ts-ignore
 import AOS from 'aos';
+// @ts-ignore
+import catalogPdf from './catalog.pdf';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -57,7 +59,7 @@ const App: React.FC = () => {
               description="Official 2026 Steel & Pipes Collection"
               suffix={<Download className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
               delay={200}
-              link="/catalog.pdf"
+              link={catalogPdf}
               target=""
               download = {"Al-Khalawi-Catalog-2026.pdf"}
             />

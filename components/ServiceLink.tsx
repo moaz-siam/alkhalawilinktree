@@ -7,6 +7,9 @@ interface ServiceLinkProps {
   description: string;
   suffix: ReactNode;
   delay?: number;
+  link: string;
+  target?: string;
+  download?: string;
 }
 
 export const ServiceLink: React.FC<ServiceLinkProps> = ({ icon, title, description, suffix, delay = 0 , link , target  , download}) => {
