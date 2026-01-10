@@ -9,7 +9,7 @@ interface ServiceLinkProps {
   delay?: number;
 }
 
-export const ServiceLink: React.FC<ServiceLinkProps> = ({ icon, title, description, suffix, delay = 0 , link , target }) => {
+export const ServiceLink: React.FC<ServiceLinkProps> = ({ icon, title, description, suffix, delay = 0 , link , target  , download}) => {
   return (
     <a 
       href={link}
@@ -18,6 +18,8 @@ export const ServiceLink: React.FC<ServiceLinkProps> = ({ icon, title, descripti
       className="group relative flex items-center gap-6 w-full bg-navy-base text-white p-6 transition-all duration-300 ease-out border-l-[6px] border-bronze-accent shadow-xl hover:-translate-y-1 hover:shadow-2xl active:translate-y-0 cursor-pointer"
       data-aos="fade-left"
       data-aos-delay={delay}
+      download={download}
+      
     >
       {/* Icon Area */}
       <div className="flex-shrink-0 bg-white/5 p-2 rounded transition-colors group-hover:bg-white/10">

@@ -57,8 +57,9 @@ const App: React.FC = () => {
               description="Official 2026 Steel & Pipes Collection"
               suffix={<Download className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
               delay={200}
-              link="./components/catalog.pdf"
+              link="/catalog.pdf"
               target=""
+              download = {"Al-Khalawi-Catalog-2026.pdf"}
             />
             <ServiceLink
               icon={<Phone className="w-8 h-8 text-bronze-accent" />}
