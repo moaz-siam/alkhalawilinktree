@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { ServiceLink } from './components/ServiceLink';
 import { SocialLinks } from './components/SocialLinks';
@@ -10,7 +10,18 @@ import AOS from 'aos';
 import catalogPdf from './catalog.pdf';
 
 const App: React.FC = () => {
+  const [showPhone, setShowPhone] = useState(false);
+
   useEffect(() => {
+    // 1. فحص الرابط بحثاً عن الرمز السري (الهاش)
+    const params = new URLSearchParams(window.location.search);
+    const accessCode = "khl-2026"; // هذا هو الرمز السري الخاص بك
+
+    if (params.get('view') === accessCode) {
+      setShowPhone(true);
+    }
+
+    // 2. تهيئة مكتبة الأنميشن
     AOS.init({
       duration: 1000,
       once: true,
@@ -61,17 +72,18 @@ const App: React.FC = () => {
               delay={200}
               link={catalogPdf}
               target=""
-              download = {"Al-Khalawi-Catalog-2026.pdf"}
+              download={"Al-Khalawi-Catalog-2026.pdf"}
             />
-            <ServiceLink
-              icon={<Phone className="w-8 h-8 text-bronze-accent" />}
-              title="Direct Call"
-              description="Speak with our sales engineers"
-              suffix={<ArrowUpRight className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
-              delay={300}
-              link="tel:+96891111191"
-              target=""
-            />
+            {showPhone && (
+              <ServiceLink
+                icon={<Phone className="w-8 h-8 text-bronze-accent" />}
+                title="Direct Call"
+                description="Speak with our sales engineers"
+                suffix={<ArrowUpRight className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
+                delay={300}
+                link="tel:+96891111191"
+              />
+            )}
             <ServiceLink
               icon={<MapPin className="w-8 h-8 text-bronze-accent" />}
               title="Factory Location"
