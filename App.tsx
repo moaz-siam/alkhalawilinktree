@@ -77,8 +77,8 @@ const App: React.FC = () => {
             {showPhone && (
               <ServiceLink
                 icon={<Phone className="w-8 h-8 text-bronze-accent" />}
-                title="Direct Call"
-                description="Speak with our sales engineers"
+                title="Executive Office"
+                description="Direct line to the Chief Executive Officer"
                 suffix={<ArrowUpRight className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
                 delay={300}
                 link="tel:+96891111191"
