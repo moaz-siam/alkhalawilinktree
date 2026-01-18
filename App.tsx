@@ -16,11 +16,11 @@ const translations = {
     website: "Main Website",
     websiteDesc: "Official corporate portal",
     catalog: "Company Profile",
-    catalogDesc: "Official 2026 Steel & Pipes Collection",
+    catalogDesc: "Comprehensive guide to our industrial capabilities and steel solutions",
     executive: "CEO Office",
     executiveDesc: "Direct communication with the CEO",
     location: "Factory Location",
-    locationDesc: "Sohar Industrial Estate, Oman",
+    locationDesc: "Sohar, Oman",
     terms: "TERMS",
     privacy: "PRIVACY",
     rights: "© 2024 Al-Khalawi & Oman Pipes Group.",
@@ -32,11 +32,11 @@ const translations = {
     website: "الموقع الرئيسي",
     websiteDesc: "البوابة الرسمية للشركة",
     catalog: "ملف الشركة",
-    catalogDesc: "كتالوج الحديد والأنابيب الرسمي 2026",
+    catalogDesc: "دليل شامل لقدراتنا الصناعية وحلول الحديد المتكاملة",
     executive: "مكتب الرئيس التنفيذي",
     executiveDesc: "تواصل مباشر مع الرئيس التنفيذي للشركة",
     location: "موقع المصنع",
-    locationDesc: "منطقة صحار الصناعية، سلطنة عمان",
+    locationDesc: "صُحَار، عُمان",
     terms: "الشروط",
     privacy: "الخصوصية",
     rights: "© 2024 مجموعة الخلاوي وأنابيب عمان.",
@@ -75,12 +75,12 @@ const App: React.FC = () => {
         html, body { overflow-x: hidden; }
         .font-arabic { font-family: 'Tajawal', sans-serif; } /* تأكد من استدعاء الخط في index.html */
       `}</style>
-      
+
       <Sidebar lang={lang} />
 
       <main className="flex-1 lg:h-full lg:overflow-y-auto custom-scrollbar relative">
         {/* زر تبديل اللغة العائم */}
-        <button 
+        <button
           onClick={toggleLanguage}
           className="fixed top-6 right-6 lg:right-auto lg:left-6 z-50 flex items-center gap-2 bg-navy-base text-white px-4 py-2 rounded-full shadow-lg hover:bg-bronze-accent transition-all text-sm font-bold"
         >
@@ -111,7 +111,7 @@ const App: React.FC = () => {
               link="https://alkhalawisteel.com/en/"
               target="_blank"
             />
-            
+
             <ServiceLink
               icon={<BookOpen className="w-8 h-8 text-bronze-accent" />}
               title={t.catalog}
@@ -140,9 +140,9 @@ const App: React.FC = () => {
               description={t.locationDesc}
               suffix={<Map className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-opacity" />}
               delay={500}
-              link="https://goo.gl/maps/example"
+              link="https://maps.app.goo.gl/ycbNdryLiwh6Hdzy7"
               target="_blank"
-              // lang ={lang}
+            // lang ={lang}
             />
           </div>
 

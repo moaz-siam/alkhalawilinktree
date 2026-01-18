@@ -24,7 +24,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ lang }) => {
   const t = translations[lang];
 
   return (
-    <aside className="relative lg:w-[45%] h-[40vh] lg:h-full overflow-hidden bg-navy-base">
+    <aside className="relative lg:w-[45%] h-[60vh] lg:h-full overflow-hidden bg-navy-base">
       {/* Background Image Container */}
       <div className="absolute inset-0 overflow-hidden">
         <img
@@ -45,11 +45,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ lang }) => {
           data-aos="fade-down"
         >
           {/* حاوية الشعار: كبيرة جداً في الجوال وأكثر وضوحاً */}
-          <div className="w-20 h-20 md:w-24 md:h-24 lg:w-20 lg:h-20 bg-white p-3 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center mx-auto shrink-0 transform hover:scale-105 transition-transform duration-300">
+          <div className="w-[100px] h-[100px] md:w-28 md:h-28 lg:w-24 lg:h-24 bg-white p-1 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-center mx-auto shrink-0 transform hover:scale-105 transition-transform duration-300 overflow-hidden">
             <img
               src={logo}
               alt="Al-Khalawi Logo"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain transform scale-110"
             />
           </div>
 
