@@ -59,8 +59,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ lang }) => {
               {t.companyName}
             </h2>
             <div className={`flex items-center gap-2 ${lang === 'ar' ? 'justify-end' : 'justify-start'}`}>
-              <span className="h-[2px] w-6 bg-bronze-accent"></span>
-              <p className="text-bronze-accent text-[11px] lg:text-xs font-bold tracking-widest uppercase">
+              <span className="h-[2px] w-6 bg-white"></span>
+              <p className="text-white text-[11px] lg:text-xs font-bold tracking-widest uppercase">
                 {t.partner}
               </p>
             </div>
